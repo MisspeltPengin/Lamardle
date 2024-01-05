@@ -8,6 +8,19 @@
 <body>
     <h1>hello world</h1>
     <p>test yest</p>
+    <button onclick="window.location.href='https://w3docs.com';">
+        Click Here
+    </button>
+    <input type="range" id="myRange" min="1900" max="2024" value="1962" oninput="updateValue()">
+    <p id="valueDisplay"></p>
+    
+    <script>
+    function updateValue() {
+      const value = document.getElementById("myRange").value;
+      document.getElementById("valueDisplay").textContent = value;
+    }
+    </script>
+    
     <p>help me</p>
 </body>
 </html>
